@@ -99,6 +99,516 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     margin-bottom: 25%;
 }
 
+
+/* first section */
+
+.first-section {
+    background-image: url(../images/background-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.first-section .contact .container {
+    padding: 2% 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first-section .contact {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.first-section .contact .number {
+    width: 50%;
+}
+
+
+.first-section .contact .number span {
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0.0rem;
+}
+
+.first-section .contact .number i {
+    color: #fff;
+    padding: 0 0.5%;
+    font-size: 0.75rem;
+    letter-spacing: 0.07rem;
+}
+
+.first-section .contact .number i:first-child {
+    margin-right: 1%;
+}
+
+.first-section .contact .sign {
+    width: 50%;
+}
+
+.first-section .contact .sign ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.first-section .contact .sign ul li {
+    list-style: none;
+    padding: 0 3%;
+}
+
+.first-section .contact .sign ul li a {
+    text-decoration: none;
+}
+
+.first-section .contact .sign ul li a i {
+    color: var(--mainColor);
+}
+
+.first-section .header {
+    padding: 2% 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.first-section .header .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-section .header .container .title h1 a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.first-section .header .container nav > ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.first-section .header .container nav > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 25% 0.7rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.first-section .header .container nav > ul > li:nth-child(2) > a {
+    padding: 37% 0.7rem;
+}
+
+.first-section .header .container nav > ul > li:nth-child(1) > a {
+    color: var(--mainColor);
+}
+
+.first-section .header .container nav > ul > li > a i {
+    transition: color 0.3s ease-in-out;
+}
+
+.first-section .header .container nav > ul > li > a:hover i {
+    transition-delay: 0.2s;
+}
+
+.first-section .header .container nav > ul > li > a:hover {
+    color: var(--mainColor);
+}
+
+.first-section .header .container form {
+    display: none;
+    border: none;
+    /* width: 100%; */
+}
+
+.first-section .header .container form select {
+    padding: 4%;
+    color: #474747;
+    font-size: 1rem;
+    outline: none;
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+
+
+
+.first-section .content .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .content .container .content-info {
+    padding: 21% 20%;
+}
+
+.first-section .content .container h2 ,
+.first-section .content .container p ,
+.first-section .content .container a {
+    color: #fff;
+}
+
+.first-section .content .container h2 {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+.first-section .content .container p {
+    font-size: 0.85rem;
+    padding: 4% 12%;
+    line-height: 2;
+}
+
+.first-section .content .container a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 4% 2%;
+    padding: 2.5% 4%;
+    border: 1px solid #fff;
+    font-size: 0.85rem;
+    transition: background-color  0.3s ease-in-out ;
+}
+
+.first-section .content .container a:first-of-type {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.first-section .content .container a:nth-of-type(1):hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.first-section .content .container a:nth-of-type(2):hover {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.first-section .drop {
+    position: relative;
+}
+
+.first-section .dropdown {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 150%;
+    top: 252%;
+    left: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown ul {
+    list-style: none;
+}
+
+.first-section .dropdown ul li {
+    border-bottom: 1px solid rgba(251,171,69,.5);
+    width: 100%;
+    display: inline-block;
+    box-sizing: unset;
+    transition: all 0.5s;
+}
+
+
+.first-section .dropdown ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5% 64% 5% 7%;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.first-section .dropdown-2 {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 100%;
+    left: 100%;
+    top: 33%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown .drop > li:nth-child(2) > a {
+    padding: 5% 33% 5% 1%;
+}
+
+.first-section .dropdown .drop i {
+    padding-right: 3px;
+    transform: scale(0.7);
+}
+
+.first-section .dropdown ul li:hover {
+    background-color: rgba(251,171,69, 1);
+}
+
+nav li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .drop-2:hover .dropdown-2 {
+    visibility: visible;
+    opacity: 1;
+} 
+
+
+.first-section .dropdown-pages {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 220%;
+    top: 252%;
+    left: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown-pages ul {
+    list-style: none;
+}
+
+.first-section .dropdown-pages ul li {
+    border-bottom: 1px solid rgba(251,171,69,.5);
+    width: 100%;
+    display: inline-block;
+    box-sizing: unset;
+    transition: all 0.5s;
+}
+
+
+.first-section .dropdown-pages ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5% 37% 5% 7%;
+    font-size: 0.9rem;
+    display: block;
+}
+
+
+.first-section .dropdown-pages .drop i {
+    padding-right: 3px;
+    transform: scale(0.7);
+}
+
+.first-section .dropdown-pages ul li:hover {
+    background-color: rgba(251,171,69, 1);
+}
+
+nav li:hover .dropdown-pages {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* items section */
+
+.items-section {
+    margin-top: -10%;
+}
+
+.items-section .container {
+    padding-bottom: 10%;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.items-section .item-position {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 4%;
+    
+}
+
+.items-section .item-position .item {
+    text-align: center;
+}
+
+.items-section .item-position .item .img {
+    position: relative;
+}
+
+
+.items-section .item-position .item .img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.items-section .item-position .item .img a {
+    height: 100%;
+}
+
+
+.items-section h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin: 10% 0 5% 0;
+    color: var(--subColor);
+}
+
+.items-section p {
+    color: var(--subColor);
+    line-height: 1.5;
+    font-size: 0.88rem;
+    font-weight: normal;
+}
+
+/* Activity section */
+
+.activity {
+    padding: 7% 0;
+}
+
+.activity .container {
+    text-align: center;
+}
+
+
+.activity .activity-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0 7% 0;
+    grid-gap: 3%;
+}
+
+.activity .activity-items .activity-item div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.activity .activity-items .activity-item h2 {
+    font-size: 1.22rem;
+    padding-left: 8%;
+    font-weight: lighter;
+    color: var(--subColor);
+}
+
+.activity .activity-items .activity-item p {
+    padding-top: 6%;
+    color: var(--subColor);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.activity a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2% 1.8%;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    transition: background-color 0.3s ease-in-out ,
+    color 0.3s ease-in-out , border 0.3s ease-in-out;
+}
+
+.activity .activity-items .activity-item i {
+    transition: color 0.4s 0.5s;
+}
+
+.activity .activity-items .activity-item:hover i {
+    color: var(--mainColor);
+}
+
+.activity a:hover {
+    background-color: transparent;
+    border: 1px solid var(--subColor);
+    color: var(--subColor);
+}
+
+/* Coffee Section */
+
+.coffee {
+    background-image: url(../images/background-02.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.coffee .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 8% 0;
+}
+
+.coffee .header {
+    text-align: left;
+}
+
+.coffee .header h5 ,
+.coffee .header h2 {
+    color: #fff;
+}
+
+.coffee .full-coffee {
+    background-image: url(../images/background-03.jpg);
+    vertical-align: middle;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.coffee .full-coffee .about {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12% 10%;
+    transition: background-color 0.5s;
+}
+
+.coffee .full-coffee .about h2 {
+    color: var(--subColor);
+    font-size: 1.9rem;
+    font-weight: lighter;
+    padding-right: 1%;
+    padding-bottom: 7%;
+}
+
+.coffee .full-coffee .about p {
+    color: var(--subColor);
+    font-size: 0.88rem;
+    font-weight: normal;
+    line-height: 1.6;
+    padding-bottom: 11%;
+}
+
+.coffee .full-coffee .about a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    padding: 3% 5%;
+    transition: background-color 0.5s , color 0.5s , border 0.5s;
+}
+
+.coffee .full-coffee .about:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.coffee .full-coffee .about a:hover {
+    border: 1px solid var(--subColor);
+    background-color: transparent;
+    color: var(--subColor);
+}
+
 /* employees section */
 
 .employees {
