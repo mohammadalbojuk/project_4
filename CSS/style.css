@@ -608,3 +608,48 @@ nav li:hover .dropdown-pages {
     background-color: transparent;
     color: var(--subColor);
 }
+
+/* employees section */
+
+.employees {
+    background-color: #F4F4F4;
+    padding: 8% 0;
+}
+
+.employees .img {
+    position: relative;
+}
+
+.employees .img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.employees .employees-items {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 4%;
+}
+
+.employees .employee-item {
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 12%);
+}
+
+.employees .employee-item .name {
+    text-align: center;
+    padding: 8% 0;
+    transition: background-color 0.5s , color 0.6s 0.5s;
+}
+
+.employees .employee-item .name p {
+    font-size: 1.2rem;
+}
+
+.employees .employee-item .name span {
+    font-size: 0.7rem;
+}
+
+.employees .employee-item:hover .name {
+    background-color: var(--mainColor);
+    color: #fff;
+}
