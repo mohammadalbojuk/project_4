@@ -99,3 +99,315 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     margin-bottom: 25%;
 }
 
+/* first section */
+
+.first-section {
+    background-image: url(../images/background-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.first-section .contact .container {
+    padding: 2% 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first-section .contact {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.first-section .contact .number {
+    width: 50%;
+}
+
+
+.first-section .contact .number span {
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0.0rem;
+}
+
+.first-section .contact .number i {
+    color: #fff;
+    padding: 0 0.5%;
+    font-size: 0.75rem;
+    letter-spacing: 0.07rem;
+}
+
+.first-section .contact .number i:first-child {
+    margin-right: 1%;
+}
+
+.first-section .contact .sign {
+    width: 50%;
+}
+
+.first-section .contact .sign ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.first-section .contact .sign ul li {
+    list-style: none;
+    padding: 0 3%;
+}
+
+.first-section .contact .sign ul li a {
+    text-decoration: none;
+}
+
+.first-section .contact .sign ul li a i {
+    color: var(--mainColor);
+}
+
+.first-section .header {
+    padding: 2% 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.first-section .header .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-section .header .container .title h1 a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.first-section .header .container nav > ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.first-section .header .container nav > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 25% 0.7rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.first-section .header .container nav > ul > li:nth-child(2) > a {
+    padding: 37% 0.7rem;
+}
+
+.first-section .header .container nav > ul > li:nth-child(1) > a {
+    color: var(--mainColor);
+}
+
+.first-section .header .container nav > ul > li > a i {
+    transition: color 0.3s ease-in-out;
+}
+
+.first-section .header .container nav > ul > li > a:hover i {
+    transition-delay: 0.2s;
+}
+
+.first-section .header .container nav > ul > li > a:hover {
+    color: var(--mainColor);
+}
+
+.first-section .header .container form {
+    display: none;
+    border: none;
+    /* width: 100%; */
+}
+
+.first-section .header .container form select {
+    padding: 4%;
+    color: #474747;
+    font-size: 1rem;
+    outline: none;
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+
+
+
+.first-section .content .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .content .container .content-info {
+    padding: 21% 20%;
+}
+
+.first-section .content .container h2 ,
+.first-section .content .container p ,
+.first-section .content .container a {
+    color: #fff;
+}
+
+.first-section .content .container h2 {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+.first-section .content .container p {
+    font-size: 0.85rem;
+    padding: 4% 12%;
+    line-height: 2;
+}
+
+.first-section .content .container a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 4% 2%;
+    padding: 2.5% 4%;
+    border: 1px solid #fff;
+    font-size: 0.85rem;
+    transition: background-color  0.3s ease-in-out ;
+}
+
+.first-section .content .container a:first-of-type {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.first-section .content .container a:nth-of-type(1):hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.first-section .content .container a:nth-of-type(2):hover {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.first-section .drop {
+    position: relative;
+}
+
+.first-section .dropdown {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 150%;
+    top: 252%;
+    left: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown ul {
+    list-style: none;
+}
+
+.first-section .dropdown ul li {
+    border-bottom: 1px solid rgba(251,171,69,.5);
+    width: 100%;
+    display: inline-block;
+    box-sizing: unset;
+    transition: all 0.5s;
+}
+
+
+.first-section .dropdown ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5% 64% 5% 7%;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.first-section .dropdown-2 {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 100%;
+    left: 100%;
+    top: 33%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown .drop > li:nth-child(2) > a {
+    padding: 5% 33% 5% 1%;
+}
+
+.first-section .dropdown .drop i {
+    padding-right: 3px;
+    transform: scale(0.7);
+}
+
+.first-section .dropdown ul li:hover {
+    background-color: rgba(251,171,69, 1);
+}
+
+nav li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .drop-2:hover .dropdown-2 {
+    visibility: visible;
+    opacity: 1;
+} 
+
+
+.first-section .dropdown-pages {
+    position: absolute;
+    background-color: rgba(251,171,69,.5);
+    width: 220%;
+    top: 252%;
+    left: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.first-section .dropdown-pages ul {
+    list-style: none;
+}
+
+.first-section .dropdown-pages ul li {
+    border-bottom: 1px solid rgba(251,171,69,.5);
+    width: 100%;
+    display: inline-block;
+    box-sizing: unset;
+    transition: all 0.5s;
+}
+
+
+.first-section .dropdown-pages ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5% 37% 5% 7%;
+    font-size: 0.9rem;
+    display: block;
+}
+
+
+.first-section .dropdown-pages .drop i {
+    padding-right: 3px;
+    transform: scale(0.7);
+}
+
+.first-section .dropdown-pages ul li:hover {
+    background-color: rgba(251,171,69, 1);
+}
+
+nav li:hover .dropdown-pages {
+    visibility: visible;
+    opacity: 1;
+}
