@@ -99,3 +99,57 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     margin-bottom: 25%;
 }
 
+/* items section */
+
+.items-section {
+    margin-top: -10%;
+}
+
+.items-section .container {
+    padding-bottom: 10%;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.items-section .item-position {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 4%;
+    
+}
+
+.items-section .item-position .item {
+    text-align: center;
+}
+
+.items-section .item-position .item .img {
+    position: relative;
+}
+
+
+.items-section .item-position .item .img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.items-section .item-position .item .img a {
+    height: 100%;
+}
+
+
+.items-section h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin: 10% 0 5% 0;
+    color: var(--subColor);
+}
+
+.items-section p {
+    color: var(--subColor);
+    line-height: 1.5;
+    font-size: 0.88rem;
+    font-weight: normal;
+}
