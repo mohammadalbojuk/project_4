@@ -466,3 +466,68 @@ nav li:hover .dropdown-pages {
     font-size: 0.88rem;
     font-weight: normal;
 }
+
+/* Activity section */
+
+.activity {
+    padding: 7% 0;
+}
+
+.activity .container {
+    text-align: center;
+}
+
+
+.activity .activity-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0 7% 0;
+    grid-gap: 3%;
+}
+
+.activity .activity-items .activity-item div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.activity .activity-items .activity-item h2 {
+    font-size: 1.22rem;
+    padding-left: 8%;
+    font-weight: lighter;
+    color: var(--subColor);
+}
+
+.activity .activity-items .activity-item p {
+    padding-top: 6%;
+    color: var(--subColor);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.activity a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2% 1.8%;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    transition: background-color 0.3s ease-in-out ,
+    color 0.3s ease-in-out , border 0.3s ease-in-out;
+}
+
+.activity .activity-items .activity-item i {
+    transition: color 0.4s 0.5s;
+}
+
+.activity .activity-items .activity-item:hover i {
+    color: var(--mainColor);
+}
+
+.activity a:hover {
+    background-color: transparent;
+    border: 1px solid var(--subColor);
+    color: var(--subColor);
+}
