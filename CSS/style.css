@@ -1361,7 +1361,7 @@ footer .copyright span {
     }
 
     footer .contact-2 .img {
-        padding-bottom: 10%%;
+        padding-bottom: 10%;
     }
 
     footer .contact-2 .img .img-grid {
@@ -1451,9 +1451,6 @@ footer .copyright span {
         padding: 0;
     }
 
-    .items-section .container {
-    
-    }
 
     /* activity */
 
@@ -1542,7 +1539,7 @@ footer .copyright span {
     }
 
     footer .contact-3 {
-        margin: 5%% 0;
+        margin: 5% 0;
     }
 }
 
