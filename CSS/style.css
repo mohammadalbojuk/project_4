@@ -99,6 +99,7 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     margin-bottom: 25%;
 }
 
+
 /* first section */
 
 .first-section {
@@ -529,5 +530,81 @@ nav li:hover .dropdown-pages {
 .activity a:hover {
     background-color: transparent;
     border: 1px solid var(--subColor);
+    color: var(--subColor);
+}
+
+/* Coffee Section */
+
+.coffee {
+    background-image: url(../images/background-02.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.coffee .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 8% 0;
+}
+
+.coffee .header {
+    text-align: left;
+}
+
+.coffee .header h5 ,
+.coffee .header h2 {
+    color: #fff;
+}
+
+.coffee .full-coffee {
+    background-image: url(../images/background-03.jpg);
+    vertical-align: middle;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.coffee .full-coffee .about {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12% 10%;
+    transition: background-color 0.5s;
+}
+
+.coffee .full-coffee .about h2 {
+    color: var(--subColor);
+    font-size: 1.9rem;
+    font-weight: lighter;
+    padding-right: 1%;
+    padding-bottom: 7%;
+}
+
+.coffee .full-coffee .about p {
+    color: var(--subColor);
+    font-size: 0.88rem;
+    font-weight: normal;
+    line-height: 1.6;
+    padding-bottom: 11%;
+}
+
+.coffee .full-coffee .about a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    padding: 3% 5%;
+    transition: background-color 0.5s , color 0.5s , border 0.5s;
+}
+
+.coffee .full-coffee .about:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.coffee .full-coffee .about a:hover {
+    border: 1px solid var(--subColor);
+    background-color: transparent;
     color: var(--subColor);
 }
